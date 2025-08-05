@@ -1,50 +1,26 @@
-$('.filmeCarrousel').slick({
-    dots: true,
-    infinite: true,
-    infinite: true,
-    autoplay: true,
-    speed: 300,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 900,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  });
-  
-  let count = 1;
-  document.getElementById("radio1").checked = true;
-  
-  setInterval( function(){
-    nextImage();
-  }, 5000)
+ //Banner principal//
 
-  function nextImage(){
-    count++;
-    if(count>4){
-      count = 1;
-    }
-    document.getElementById("radio1"+count).checked = true;
-    
-  }
+  $(document).ready(function () {
+      $('.banner-slider').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 700,
+        fade: true,
+        cssEase: 'ease-in-out'
+      });
+    });
+
+//Filmes em cartaz//
+const carrossel = document.getElementById('carrossel');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+prevBtn.addEventListener('click', () => {
+  carrossel.scrollBy({ left: -220,behavior: "smooth"});
+  });
+  nextBtn.addEventListener('click', () => {
+  carrossel.scrollBy({ left: 220, behavior: "smooth"});
+  });

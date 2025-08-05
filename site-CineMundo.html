@@ -1,142 +1,108 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎦CineMundo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎦CineMundo</title>
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Slick.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
-        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Font Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Slick Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
+
 <body>
-    <!--Cabeçalho-->
-    <header id="Menu" class="topo">
-        <a href="site-CineMundo.html">
-            <div class="logo">🎦CineMundo
-        </a>
-        <nav>
-            <ul class="topo_menu">
-                <li><a href="login.html"> 👤Login</a></li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-    <!--Banner Principal---->
-   <section id="banner">
-        <div class="slider">
-         <div class="slides">
-            <input type="radio" name="radio--btn" id="radio1">
-            <input type="radio" name="radio--btn" id="radio2">
-            <input type="radio" name="radio--btn" id="radio3">
-            <input type="radio" name="radio--btn" id="radio4">
-            <input type="radio" name="radio--btn" id="radio5">
-            <input type="radio" name="radio--btn" id="radio6">
-             <input type="radio" name="radio--btn" id="radio7">
-            <input type="radio" name="radio--btn" id="radio8">
 
-       <div class="slide first"><img src="imagens/capitão_america.jpg"></div>
-       <div class="slide"><img src="imagens/thunder.jpg"></div>
-       <div class="slide"><img src="imagens/ana-de-armas-bailarina.webp"></div>
-       <div class="slide"><img src="imagens/jur.png"></div>
-       <div class="slide"><img src="imagens/Karate-Kid-Legends.jpg"></div>
-       <div class="slide"><img src="imagens/looneyt.jpg"></div>
-       <div class="slide"><img src="imagens/superman1.jpg"></div>
-       <div class="slide"><img src="imagens/Minecraft-Filme-1.webp"></div>
-
-        <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-            <div class="auto-btn6"></div>
-            <div class="auto-btn7"></div>
-            <div class="auto-btn8"></div>
-        </div>
-              <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-                <label for="radio5" class="manual-btn"></label>
-                <label for="radio6" class="manual-btn"></label>
-                <label for="radio7" class="manual-btn"></label>
-                <label for="radio8" class="manual-btn"></label>
-              </div>
-            
-        </div>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <a href="site-CineMundo.html">🎦CineMundo</a>
     </div>
-</section>
-    <!---Filmes em Cartaz-->
-    <section class="cartaz">
-        <h2>Filmes em Cartaz</h2>
-        <div class="cartalogo_filmes filmeCarrousel">
-            <div class="filme">
-                <a href="filme1.html"><img src="imagens/filme1.webp"></a>
-                <h3>Capitão América: Admirável Mundo Novo</h3>
-                <p> A14 - AÇÃO - 1h59</p>
-            </div>
-            <div class="filme">
-                <a href="#"><img src="imagens/Thunderbolts_5.jpg"></a>
-                <h3>Thunderbolts</h3>
-                <p>A14 - AÇÃO, AVENTURA - 2h06</p>
-            </div>
-            <div class="filme">
-                <a href="#"><img src="imagens/karatekid_lendas.jpeg"></a>
-                <h3>Karate Kid Lendas</h3>
-                <p> A12 - AÇÃO, DRAMA - 1h30</p>
-            </div>
-            <div class="filme">
-                <a href="#"><img src="imagens/Minecraft.webp"></a>
-                <h3>Um Filme Minecraft</h3>
-                <p>A10 - AÇÃO, ANIMAÇÃO, AVENTURA - 2h </p>
-            </div>
-            <div class="filme">
-                <a href="#"><img src="imagens/superman.jpg"></a>
-                <h3>Superman: Legacy</h3>
-                <P> A12 - AÇÃO, AVENTURA, FANTASIA, FICÇÃO - 2h</P>
-            </div>
-            <div class="filme">
-                <a href="#"><img src="imagens/looney.webp"></a>
-                <h3>Looney Tunes - O filme: O Dia Que A Terra Explodiu</h3>
-                <p>A10 - ANIMAÇÃO - 1h30</p>
-            </div>
-            <div class="filme">
+    <nav>
+      <ul class="topo_menu">
+        <li>
+         <button>
+          <a href="login.html">👤 Login</a>
+          </button> 
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner com carrossel automático -->
+  <section id="banner">
+    <div class="banner-slider">
+      <div><img src="imagens/capitão_america.jpg" alt="Capitão América"></div>
+      <div><img src="imagens/thunder.jpg" alt="Thunderbolts"></div>
+      <div><img src="imagens/ana-de-armas-bailarina.webp" alt="Bailarina"></div>
+      <div><img src="imagens/jur.png" alt="Jurassic World"></div>
+      <div><img src="imagens/Karate-Kid-Legends.jpg" alt="Karate Kid"></div>
+      <div><img src="imagens/looneyt.jpg" alt="Looney Tunes"></div>
+      <div><img src="imagens/superman1.jpg" alt="Superman"></div>
+      <div><img src="imagens/Minecraft-Filme-1.webp" alt="Minecraft"></div>
+    </div>
+  </section>
+
+  <!-- Filmes em cartaz -->
+  <section class="cartaz">
+    <h2>🎬 Filmes em Cartaz</h2>
+    <div class="carrossel-container">
+      <button class="btn prev"><</button>
+      <div class="carrossel" id="carrossel">
+        <div class="filme">
+        <a href="filme1.html"><img src="imagens/filme1.webp" alt=""></a>
+        <h3>Capitão América: Admirável Mundo Novo</h3>
+        <p>A14 - AÇÃO - 1h59</p>
+      </div>
+      <div class="filme">
+        <a href="#"><img src="imagens/Thunderbolts_5.jpg" alt=""></a>
+        <h3>Thunderbolts</h3>
+        <p>A14 - AÇÃO, AVENTURA - 2h06</p>
+      </div>
+      <div class="filme">
+        <a href="#"><img src="imagens/karatekid_lendas.jpeg" alt=""></a>
+        <h3>Karate Kid Lendas</h3>
+        <p>A12 - AÇÃO, DRAMA - 1h30</p>
+      </div>
+      <div class="filme">
+        <a href="#"><img src="imagens/Minecraft.webp" alt=""></a>
+        <h3>Um Filme Minecraft</h3>
+        <p>A10 - AÇÃO, ANIMAÇÃO - 2h</p>
+      </div>
+      <div class="filme">
+        <a href="#"><img src="imagens/superman.jpg" alt=""></a>
+        <h3>Superman: Legacy</h3>
+        <p>A12 - AÇÃO, FANTASIA - 2h</p>
+      </div>
+      <div class="filme">
+        <a href="#"><img src="imagens/looney.webp" alt=""></a>
+        <h3>Looney Tunes: O Dia Que a Terra Explodiu</h3>
+        <p>A10 - ANIMAÇÃO - 1h30</p>
+      </div>
+      <div class="filme">
+        <a href="#"><img src="imagens/jurassic.webp"></a>
+                <h3>Jurassic World: Recomeço</h3>
+                <p>A12 - AÇÃO, AVENTURA - 2h</P>
+      </div>
+      <div class="filme">
                 <a href="#"><img src="imagens/bailarina.webp"></a>
                 <h3>Bailarina – Do Universo de John Wick</h3>
                 <p>A16 - AÇÃO - 2h06</p>
             </div>
-            <div class="filme">
-                <a href="#"><img src="imagens/jurassic.webp"></a>
-                <h3>Jurassic World: Recomeço</h3>
-                <p>A12 - AÇÃO, AVENTURA - 2h</P>
-            </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <!--Rodapé-->
-    <footer class="rodape">
-        <p> © 2025 - CineMundo - Brasil - <br> ADRITON </p>
-    </footer>
-
-    <script src="./js/slick.js"></script>
+      </div>
+      <button class="btn next">></button>
+    </div>
+  </section>
+  <!-- Script do carrossel -->
+  <script src="js/slick.js"></script>
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>© 2025 - CineMundo - Brasil<br>ADRITON</p>
+  </footer>
 </body>
-
 </html>

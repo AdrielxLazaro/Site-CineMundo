@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="PT-BR">
 <head>
 <meta charset="UTF-8"/>
@@ -8,15 +8,21 @@
 </head>
 <body>
     <!--Banner Principal-->
-    <header>
-        <a href="site-CineMundo.html"><div class="logo">🎦CineMundo</a>
-            <nav>
-                <ul class="topo_menu">
-                 <li><a href="login.html">👤Login</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+   <header>
+    <div class="logo">
+      <a href="site-CineMundo.html">🎦CineMundo</a>
+    </div>
+    <nav>
+      <ul class="topo_menu">
+        <li>
+         <button>
+          <a href="login.html">👤 Login</a>
+          </button> 
+        </li>
+      </ul>
+    </nav>
+  </header>
+
         <!-----Banner Principal---->
     <main>
     <div class="banner-container">
@@ -34,9 +40,10 @@
      </section>
         </div>
      <section class="buttons">
-            <button> Trailer</button>
-            <button> Sessões </button>
-    </section>
+        <button id="btnTrailer">Trailer</button>
+        <button id="btnSessoes">Sessões</button>
+     </section>
+
     <!-- Modal do Trailer -->
 <div id="trailerModal" class="modal">
   <div class="modal-content">

@@ -1,107 +1,134 @@
 @charset "utf-8";
 
- * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+/* -------------------- RESET E CONFIGURAÇÕES GERAIS -------------------- */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamentos padrão */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
+  font-family: 'Poppins', sans-serif; /* Fonte padrão */
+}
 
-    body {
-      background-color: #000;
-      color: white;
-    }
+body {
+  background-color: #000; /* Fundo preto */
+  color: white; /* Texto branco */
+}
 
-    header {
-      background-color: #000080;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      z-index: 1000;
-      width: 100%;
-      height: 10vh;
-      top:0;
-    }
+/* -------------------- CABEÇALHO -------------------- */
+header {
+  background-color: #000080; /* Azul marinho */
+  color: white;
+  padding: 20px 40px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre logo e menu */
+  align-items: center; /* Alinha verticalmente */
+  position: fixed; /* Fixa no topo */
+  z-index: 1000; /* Fica acima dos outros elementos */
+  width: 100%; /* Ocupa toda a largura */
+  height: 10vh; /* Altura proporcional à tela */
+  top: 0; /* Gruda no topo */
+}
 
-    .logo a {
-      color: white;
-      font-size: 24px;
-      text-decoration: none;
-    }
+/* Logo do site */
+.logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
 
-    .topo_menu {
-      list-style: none;
-    }
+/* Lista do menu */
+.topo_menu {
+  list-style: none; /* Remove marcadores */
+}
 
-    .topo_menu li {
-      display: inline-block;
-      margin-left: 20px;
-    }
+.topo_menu li {
+  display: inline-block; /* Coloca itens lado a lado */
+  margin-left: 20px;
+}
 
-    .topo_menu a {
-      color: white;
-      text-decoration: none;
-      font-size: 19px;
-    }
-    .topo_menu button{
-      background-color: red;
-      border-radius: 5px 5px 5px 5px;
-      padding: 5px;
-    }
-    .topo_menu :hover{
-      background-color: #ff6b6b;
-      color: #000;
-    }
+.topo_menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 19px;
+}
 
-    /* Banner */
-    #banner {
-      max-width: 100%;
-      max-height: 50vh;
-      margin-top: 50px;
-      margin-bottom: 20vh;
-    }
+/* Botão no menu */
+.topo_menu button {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+}
 
-    .banner-slider img {
-      width: 100%;
-      height: 400px;
-      object-position: center center;
-     margin-top: 20px;
-    }
+/* Efeito hover no menu */
+.topo_menu :hover {
+  background-color: #ff6b6b;
+  color: #000;
+}
 
-    .slick-dots li button:before {
-      color: white;
-    }
+/* -------------------- BANNER -------------------- */
+#banner {
+  max-width: 100%; /* Ocupa largura total */
+  max-height: 50vh; /* Altura máxima */
+  margin-top: 50px; /* Espaço do topo */
+  margin-bottom: 20vh; /* Espaço abaixo */
+}
 
-     /* Filmes em cartaz */
-    .cartaz {
-      padding: 40px;
-      text-align: center;
-    }
-    .cartaz h2 {
-      font-size: 30px;
-      margin-bottom: 40px;
-    }
+/* Imagens do slider */
+.banner-slider img {
+  width: 100%;
+  height: 400px;
+  object-position: center center; /* Centraliza imagem */
+  margin-top: 20px;
+}
+
+/* Pontos de navegação do slider */
+.slick-dots li button:before {
+  color: white;
+}
+
+/* -------------------- FILMES EM CARTAZ -------------------- */
+.cartaz {
+  padding: 40px;
+  text-align: center;
+}
+
+.cartaz h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #000080;
+  background-color: #000080;
+}
+
+/* Container do carrossel */
 .carrossel-container {
   position: relative;
   width: 90%;
   margin: auto;
-  overflow: hidden;
+  overflow: hidden; /* Oculta conteúdo extra */
 }
-.carrossel{
+
+/* Lista de filmes no carrossel */
+.carrossel {
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 20px;
-  padding: 10px 0; 
+  overflow-x: auto; /* Rolagem horizontal */
+  scroll-behavior: smooth; /* Rolagem suave */
+  gap: 30px; /* Espaço entre itens */
+  padding: 10px 0;
+  scrollbar-width: none; /* Esconde barra no Firefox */
 }
+
+/* Esconde barra de rolagem no Chrome, Safari e Edge */
+.carrossel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Efeito hover nos filmes */
 .filme:hover {
   transform: scale(1.05);
 }
-.filme img{
-  flex: 0 0 auto;
+
+/* Imagens dos filmes */
+.filme img {
+  flex: 0 0 auto; /* Mantém largura fixa */
   width: 200px;
   height: 50vh;
   font-size: 2em;
@@ -109,19 +136,25 @@
   line-height: 120px;
   border-radius: 10px;
 }
+
+/* Título do filme */
 .filme h3 {
-font-size: 16px;
-margin-top: 10px;
-color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+  color: #fff;
 }
+
+/* Descrição do filme */
 .filme p {
-font-size: 14px;
-color: #bbb;
+  font-size: 14px;
+  color: #bbb;
 }
-.btn{
+
+/* Botões de navegação do carrossel */
+.btn {
   position: absolute;
   top: 35%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
   color: white;
   border: none;
   font-size: 2rem;
@@ -129,18 +162,23 @@ color: #bbb;
   cursor: pointer;
   z-index: 1;
 }
+
+/* Botão anterior */
 .prev {
   left: 0;
 }
-.next{
+
+/* Botão próximo */
+.next {
   right: 0;
 }
-/* Rodapé */
-.rodape{
-    background-color:rgba(2, 2, 103);
-    top: auto;
-    padding: 10px;
-    text-align: center;
-    margin-top: 05%;
-    color: #fff;
+
+/* -------------------- RODAPÉ -------------------- */
+.rodape {
+  background-color: rgba(2, 2, 103); /* Azul escuro */
+  top: auto;
+  padding: 10px;
+  text-align: center;
+  margin-top: 5%;
+  color: #fff;
 }

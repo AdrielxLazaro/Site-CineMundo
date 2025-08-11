@@ -1,3 +1,4 @@
+/* ===================== CONFIGURAÇÕES GERAIS ===================== */
 @charset "utf-8";
 *{
     margin:0;
@@ -5,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
+
 body{
     background-color: #222;
     color: white;
@@ -12,60 +14,63 @@ body{
     text-align: center;
     align-items: center;
 }
-  /*CABECALHO*/  
-  header {
-      background-color: #000080;
-      color: white;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      z-index: 1000;
-      width: 100%;
-      height: 10vh;
-      top:0;
-    }
 
-    .logo a {
-      color: white;
-      font-size: 24px;
-      text-decoration: none;
-    }
-
-    .topo_menu {
-      list-style: none;
-    }
-
-    .topo_menu li {
-      display: inline-block;
-      margin-left: 20px;
-    }
-
-    .topo_menu a {
-      color: white;
-      text-decoration: none;
-      font-size: 19px;
-    }
-    .topo_menu button{
-      background-color: red;
-      border-radius: 5px 5px 5px 5px;
-      padding: 5px;
-    }
-    .topo_menu :hover{
-      background-color: #ff6b6b;
-      color: #000;
-    }
-
-/*----------------------Banner Principal-------------------------------------------------------------------------*/
-.banner-container{
-  margin-top: 3%;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  overflow: hidden;
-
+/* ===================== CABEÇALHO ===================== */
+header {
+    background-color: #000080;
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 10vh;
+    top:0;
 }
+
+.logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.topo_menu {
+    list-style: none;
+}
+
+.topo_menu li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.topo_menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.topo_menu button{
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.topo_menu :hover{
+    background-color: #ff6b6b;
+    color: #000;
+}
+
+/* ===================== BANNER PRINCIPAL ===================== */
+.banner-container{
+    margin-top: 3%;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
 .banner-background{
     background-image: url("https://midianinja.org/wp-content/uploads/2025/03/CaptainAmericaBraveNewWorld-jpg.webp");
     background-size: cover;
@@ -77,101 +82,108 @@ body{
     z-index: 1;
     filter: brightness(60%) blur(2px);
 }
-/*---------------------------*FILME1*----------------------------------------------------------------------------------*/
-.banner-content{
-   position: relative;
-   z-index: 2;
-   display: flex;
-   align-items: center;
-   height: 100%;
-   padding: 0 60px;
-   color: white;
 
+/* ===================== CONTEÚDO DO BANNER ===================== */
+.banner-content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 60px;
+    color: white;
 }
+
 .banner-content img{
-  height: 80%;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgb(0,0,0,0.6);
-  margin-right: 40px; ;
+    height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.6);
+    margin-right: 40px;
 }
+
 .banner-info{
     max-width: 800px;
 }
+
 .banner-info h2{
     font-size: 36px;
     color: #cbd4ff;
     text-shadow: 2px 2px 4px blue;  
     margin:0 0 10px;  
 }
+
 b{
     background-color: rgb(229, 109, 4);
     border-radius: 10px;
     padding: 3px;
     font-size: 18px;
+}
 
-}
 .detalhes {
-  font-size: 18px;
-  margin-bottom: 15px;
-  color: #fcfcfb;
-  text-shadow: 3px 3px 10px blue;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fcfcfb;
+    text-shadow: 3px 3px 10px blue;
 }
+
 .descricao{
     font-size: 18px;
     line-height: 1.5;
     color: #f0f0f0;
     text-shadow: 3px 3px 3px blue;
 }
-/*--------------Trailer e Sessões do filme---------*/
 
+/* ===================== BOTÕES TRAILER E SESSÕES ===================== */
 .buttons button{
-  background-color: #a20210;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  font-size: 25px;
-  margin-right: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s;
+    background-color: #a20210;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
+
 .buttons button:hover{
-   background-color: #ff6b6b;
+    background-color: #ff6b6b;
 }
-/* Modal de fundo */
+
+/* ===================== MODAL DE TRAILER ===================== */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
-  background-color: #111;
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 700px;
-  position: relative;
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    position: relative;
 }
 
 .close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  color: white;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-/*---------rodape da pagina*-----*/
+/* ===================== RODAPÉ ===================== */
 #rodape{
     background-color: rgb(2, 2, 103);
     top: auto;

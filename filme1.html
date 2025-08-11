@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>🎦CineMundo_Filme1</title>
-<link rel="stylesheet" href="css/filme1.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎦CineMundo_Filme1</title>
+    <!-- Importa o CSS específico desta página -->
+    <link rel="stylesheet" href="css/filme1.css">
 </head>
 <body>
-    <!--Banner Principal-->
-   <header>
-    <div class="logo">
-      <a href="site-CineMundo.html">🎦CineMundo</a>
-    </div>
-    <nav>
-      <ul class="topo_menu">
-        <li>
-         <button>
-          <a href="login.html">👤 Login</a>
-          </button> 
-        </li>
-      </ul>
-    </nav>
-  </header>
+    
+    <!-- ======= CABEÇALHO / BANNER PRINCIPAL ======= -->
+    <header>
+        <!-- Logo e link para a página inicial -->
+        <div class="logo">
+            <a href="site-CineMundo.html">🎦CineMundo</a>
+        </div>
 
-        <!-----Banner Principal---->
+        <!-- Menu de navegação -->
+        <nav>
+            <ul class="topo_menu">
+                <li>
+                    <!-- Botão de acesso à página de login -->
+                    <button>
+                        <a href="login.html">👤 Login</a>
+                    </button> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ======= CONTEÚDO PRINCIPAL ======= -->
     <main>
-    <div class="banner-container">
-     <div class="banner-background"></div>
-        
-    <section class="banner-content">
+        <!-- Container do banner -->
+        <div class="banner-container">
+            <!-- Imagem de fundo do banner -->
+            <div class="banner-background"></div>
+            
+            <!-- Conteúdo sobre o filme -->
+            <section class="banner-content">
+                <!-- Imagem do cartaz -->
                 <img src="imagens/filme1.webp">
                 <div class="banner-info">
-                <h2> Capitão América: Admirável Mundo Novo </h2>
-                <p class="detalhes"> <b>14</b> | &nbsp; 1h59 &nbsp;| AÇÃO </p>
-                <p class="descricao">Após se encontrar com o recém-eleito presidente dos EUA, Thaddeus Ross, Sam se vê no meio de um incidente internacional.
-                Ele deve descobrir o motivo por trás de um plano global nefasto antes que o verdadeiro responsável faça com que o mundo todo veja vermelho...</p>
-   
-            </div>
-     </section>
+                    <!-- Título do filme -->
+                    <h2>Capitão América: Admirável Mundo Novo</h2>
+                    <!-- Detalhes: classificação, duração e gênero -->
+                    <p class="detalhes"> <b>14</b> | &nbsp; 1h59 &nbsp;| AÇÃO </p>
+                    <!-- Sinopse do filme -->
+                    <p class="descricao">
+                        Após se encontrar com o recém-eleito presidente dos EUA, Thaddeus Ross, Sam se vê no meio de um incidente internacional.
+                        Ele deve descobrir o motivo por trás de um plano global nefasto antes que o verdadeiro responsável faça com que o mundo todo veja vermelho...
+                    </p>
+                </div>
+            </section>
         </div>
-     <section class="buttons">
-        <button id="btnTrailer">Trailer</button>
-        <button id="btnSessoes">Sessões</button>
-     </section>
 
-    <!-- Modal do Trailer -->
-<div id="trailerModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <video id="trailerVideo" width="100%" height="400" controls>
-      <source src="videos/capitao_america_admirável_mundo_novo.mp4" type="video/mp4">
-    </video>
-  </div>
-</div>
+        <!-- Botões de ação (trailer e sessões) -->
+        <section class="buttons">
+            <button id="btnTrailer">Trailer</button>
+            <button id="btnSessoes">Sessões</button>
+        </section>
 
-    <script src="./js/filme1.js"></script>
+        <!-- ======= MODAL DO TRAILER ======= -->
+        <div id="trailerModal" class="modal">
+            <div class="modal-content">
+                <!-- Botão de fechar modal -->
+                <span class="close">&times;</span>
+                <!-- Vídeo do trailer -->
+                <video id="trailerVideo" width="100%" height="400" controls>
+                    <source src="videos/capitao_america_admirável_mundo_novo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <!-- Script JavaScript com funções da página -->
+        <script src="./js/filme1.js"></script>
     </main>
+
+    <!-- ======= RODAPÉ ======= -->
     <footer id="rodape">
-        <p> © 2025 - CineMundo - Brasil </p>
+        <p>© 2025 - CineMundo - Brasil</p>
         <p>ADRITON</p>
     </footer>
     

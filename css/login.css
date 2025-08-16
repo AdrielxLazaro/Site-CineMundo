@@ -53,6 +53,18 @@ body{
     margin-top: 40px;
     right: 20px;
 }
+a {
+  display: flex;
+  align-items: center;  /* Alinha ícone e texto */
+  gap: 6px;             /* Espaço entre ícone e texto */
+  text-decoration: none;
+  color: white;         /* cor do texto */
+  font-size: 18px;      /* opcional */
+}
+
+a svg {
+  flex-shrink: 0;       /* Garante que o ícone não deforme */
+}
 /* Banner Principal */
 .banner{
     background-image: url("-imagens/bg-hero.jpeg");

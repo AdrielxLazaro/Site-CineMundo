@@ -17,6 +17,7 @@ body {
 header {
   background-color: #000080; /* Azul marinho */
   color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
   padding: 20px 40px; /* Espaçamento interno */
   display: flex; /* Layout flexível */
   justify-content: space-between; /* Espaço entre logo e menu */
@@ -46,9 +47,16 @@ header {
 }
 
 .topo_menu a {
-  color: white;
   text-decoration: none;
-  font-size: 19px;
+  display:flex;
+  align-items: center;  /* Alinha ícone e texto */
+  gap: 6px;             /* Espaço entre ícone e texto */
+  text-decoration: none;
+  color: white;         /* cor do texto */
+  font-size: 20px;      /* opcional */
+}
+a svg {
+  flex-shrink: 0;       /* Garante que o ícone não deforme */
 }
 
 /* Botão no menu */

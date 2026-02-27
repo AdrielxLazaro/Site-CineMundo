@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <!-- Configuração de codificação de caracteres -->
+  <meta charset="UTF-8" />
+  <!-- Ajuste para layout responsivo em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título que aparece na aba do navegador -->
+  <title>🎦CineMundo</title>
+  
+  <!-- Importa o arquivo CSS principal -->
+  <link rel="stylesheet" href="css/cadastro.css">
+
+  <!-- Fonte Poppins do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Biblioteca jQuery (necessária para o Slick Carousel) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <!-- Estilos do Slick Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  
+  <!-- Script do Slick Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+<body>
+      <!-- =================== CABEÇALHO =================== -->
+  <header>
+    <!-- Logo do site -->
+    <div class="logo">
+      <a href="site-CineMundo.html">
+        🎦CineMundo
+      </a>
+    </div>
+
+    <!-- Menu de navegação -->
+    <nav>
+      <ul class="topo_menu">
+        <li>
+          <button>
+            <!-- Link para página de login -->
+            <a href="login.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="darkblue" 
+                   class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+              Login
+            </a>
+          </button> 
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="banner-container">
+        <form id="cadastro">
+            <h1>Cadastro de Usuário</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
+            <button class="cadastrar" type="submit">Cadastrar</button>
+            <p>Já tem conta? <a href="login.html">Login</a></p>
+        </form>
+    </section>
+      <!-- =================== RODAPÉ =================== -->
+  <footer class="rodape">
+    <p><b>© 2025 - CineMundo - Brasil</b><br><b>ADRITON</b></p>
+  </footer>
+</body>
+</html>

@@ -1,169 +1,215 @@
 @charset "utf-8";
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-body{
-    background-color: #000;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-}
-/*CABECALHO*/
-.logo{
-    background-color: rgb(2,2,103);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1px 15px;
-    width: 100%;
-    top: 0;
-    margin-left: 0px;
-    font-size: 30px;
-    position: fixed;
-}
-.logo a{
-    text-decoration: none;
-    color: white;
-    position: fixed;
-}
-.topo{
-    height: 10vh;
-    background-color:rgba(51, 50, 50, 0.29);
-}
-.topo_menu{
-    display: flex;
-    margin: 35px;
-    margin-right: 100px;
-}
-.topo_menu li {
-    margin: -50px;
-    justify-content: flex-end;
-    list-style: none;
 
+/* -------------------- RESET E CONFIGURAÇÕES GERAIS -------------------- */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamentos padrão */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
+  font-family: 'Poppins', sans-serif; /* Fonte padrão */
 }
-.topo_menu li a{
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    margin-top: 40px;
-    right: 20px;
+
+body {
+  background-color: #000; /* Fundo preto */
+  color: white; /* Texto branco */
 }
-a {
-  display: flex;
+
+/* -------------------- CABEÇALHO -------------------- */
+header {
+  background-color: #000080; /* Azul marinho */
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+  padding: 20px 40px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre logo e menu */
+  align-items: center; /* Alinha verticalmente */
+  position: fixed; /* Fixa no topo */
+  z-index: 1000; /* Fica acima dos outros elementos */
+  width: 100%; /* Ocupa toda a largura */
+  height: 10vh; /* Altura proporcional à tela */
+  top: 0; /* Gruda no topo */
+}
+
+/* Logo do site */
+.logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Lista do menu */
+.topo_menu {
+  list-style: none; /* Remove marcadores */
+}
+
+.topo_menu li {
+  display: inline-block; /* Coloca itens lado a lado */
+  margin-left: 20px;
+}
+
+.topo_menu a {
+  text-decoration: none;
+  display:flex;
   align-items: center;  /* Alinha ícone e texto */
   gap: 6px;             /* Espaço entre ícone e texto */
-  text-decoration: none;
   color: white;         /* cor do texto */
-  font-size: 18px;      /* opcional */
+  font-size: 20px;      /* opcional */
 }
-
 a svg {
   flex-shrink: 0;       /* Garante que o ícone não deforme */
 }
-/* Banner Principal */
-.banner{
-    background-image: url("-imagens/bg-hero.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 60px;
-    height: 25vh;
+
+/* Botão no menu */
+.topo_menu button {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  width: auto;
 }
-.banner h1{
-    color: red;
-    text-shadow: 10px 10px 10px white;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2.5rem;
+
+/* Efeito hover no menu */
+.topo_menu :hover {
+  background-color: #ff6b6b;
+  color: #000;
 }
-body form{
-    margin: auto;
-    width: 20%;
-    padding: 20px;
-    background-color: rgb(2, 2, 103);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(153, 6, 6);
-    margin-top: 20px;
+
+/* -------------------- BANNER E LOGIN -------------------- */
+.banner {
+ width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px; 
+  margin: 195px auto 0 auto; /* Espaçamento do topo */
+  border-radius: 10px;
 }
-body h1{
-    text-align: center;
-    justify-content: center;
-    padding: 20px;
+.slide img {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(153, 6, 6);
 }
-body label[for="email"] {
-    display: flex;
-    margin-bottom: 10px;
+
+.login_form {
+  display: flex;
+  background-color: #101935;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100vh;
+  height: 85vh;
+  box-shadow: 0px 0px 10px rgb(153, 6, 6);
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
-body input[type="email"]{
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
+
+.login_form form h1{
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  flex-direction: column;
+  margin-top: -150px;
+  margin-bottom: 50px;
 }
-body label[for="senha"]{
-    display: flex;
-    margin-bottom: 10px;
+
+.login_form label[for="email"] {
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  padding: 25px;
+  
 }
-body input[type='password']{
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    display: flex;
-   
+.login_form input{
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 35px;
 }
-body input[type="submit"]{
-    background-color: rgb(226, 0, 0);
-    margin-bottom: 10px;
-    display: flex; 
-    font-size: 15px;
-    margin-top: 10px;
+
+.login_form label[for="senha"] {
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
-body a{
-    color: white;
+.login_form a{
+  color: red;
+  margin-bottom: 12px;
+  font-size: 13px;
 }
-.btn-Google img{
-       width: 15px;    
+.login_form a:hover{
+  background-color: #ff6b6b;
 }
-.btn-Google{
-    text-align: center;
-    font-size: 20px;
-    background-color: red;
-    border: 1px solid black;
-     margin-top: 10px;
+.entrar {
+  background-color: rgba(255, 12, 12, 0.827);
+  color: white;
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 50%;
+  padding: 10px;
+  float: right;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
 }
-.btn-Google a{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
+
+/* estilos individuais */
+
+.social-login{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 55px;
 }
-.btn-Microsioft{
-    text-align: center;
-    font-size: 20px;
-    background-color: red;
-    border: 1px solid black; 
-     margin-top: 10px;
+.social-btn {
+  flex: 1;
+  height: 48px;
+  background: #ffffff;
+  color: #333;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+
 }
-.btn-Microsioft a{
-    text-decoration: none;
-    color: black;
-    padding: 10px;
+.social-btn:hover{
+  background: #f5f5f5;
+  border-color: #cfcfcf;
+  transform: translateY(-1px);
 }
-.btn-Microsioft img{
-    width: 15px; 
+.ou {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 600;
 }
+.social-btn.google:hover {
+  border-color: #4285f4;
+}
+
+.social-btn.microsoft:hover {
+  border-color: #0078d4;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 /* Rodapé */
 .rodape{
     background-color: rgb(2, 2, 103);
-    top: auto;
+    margin-top: 9%;
     padding: 10px;
+    text-align: center;
+    padding: 10px 0;
 }

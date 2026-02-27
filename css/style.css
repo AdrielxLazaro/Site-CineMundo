@@ -17,7 +17,6 @@ body {
 header {
   background-color: #000080; /* Azul marinho */
   color: white;
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
   padding: 20px 40px; /* Espaçamento interno */
   display: flex; /* Layout flexível */
   justify-content: space-between; /* Espaço entre logo e menu */
@@ -47,13 +46,15 @@ header {
 }
 
 .topo_menu a {
+  color: white;
   text-decoration: none;
-  display:flex;
+  font-size: 19px;
+  display: flex;
   align-items: center;  /* Alinha ícone e texto */
   gap: 6px;             /* Espaço entre ícone e texto */
   text-decoration: none;
   color: white;         /* cor do texto */
-  font-size: 20px;      /* opcional */
+  font-size: 18px;      /* opcional */
 }
 a svg {
   flex-shrink: 0;       /* Garante que o ícone não deforme */
@@ -77,7 +78,7 @@ a svg {
   max-width: 100%; /* Ocupa largura total */
   max-height: 50vh; /* Altura máxima */
   margin-top: 50px; /* Espaço do topo */
-  margin-bottom: 20vh; /* Espaço abaixo */
+  margin-bottom: 15vh; /* Espaço abaixo */
 }
 
 /* Imagens do slider */
@@ -95,13 +96,13 @@ a svg {
 
 /* -------------------- FILMES EM CARTAZ -------------------- */
 .cartaz {
-  padding: 40px;
+
   text-align: center;
 }
 
 .cartaz h2 {
   font-size: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   border: 1px solid #000080;
   background-color: #000080;
 }
@@ -135,6 +136,12 @@ a svg {
 }
 
 /* Imagens dos filmes */
+.filme{
+  margin: 5px;
+  background-color: #363636;
+  border: 20px solid #363636;
+  border-radius: 10px;
+}
 .filme img {
   flex: 0 0 auto; /* Mantém largura fixa */
   width: 200px;
@@ -150,12 +157,14 @@ a svg {
   font-size: 16px;
   margin-top: 10px;
   color: #fff;
+  text-shadow: 2px 2px 4px #0c8ebd;
 }
 
 /* Descrição do filme */
 .filme p {
   font-size: 14px;
   color: #bbb;
+  text-shadow: 2px 2px 4px #0c8ebd;
 }
 
 /* Botões de navegação do carrossel */
@@ -166,7 +175,7 @@ a svg {
   color: white;
   border: none;
   font-size: 2rem;
-  padding: 5px 10px;
+  padding: 15px 10px;
   cursor: pointer;
   z-index: 1;
 }

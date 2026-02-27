@@ -17,49 +17,61 @@ body{
 
 /* ===================== CABEÇALHO ===================== */
 header {
-    background-color: #000080;
-    color: white;
-    padding: 20px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    z-index: 1000;
-    width: 100%;
-    height: 10vh;
-    top:0;
+  background-color: #000080; /* Azul marinho */
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+  padding: 20px 40px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre logo e menu */
+  align-items: center; /* Alinha verticalmente */
+  position: fixed; /* Fixa no topo */
+  z-index: 1000; /* Fica acima dos outros elementos */
+  width: 100%; /* Ocupa toda a largura */
+  height: 10vh; /* Altura proporcional à tela */
+  top: 0; /* Gruda no topo */
 }
 
+/* Logo do site */
 .logo a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
 }
 
+/* Lista do menu */
 .topo_menu {
-    list-style: none;
+  list-style: none; /* Remove marcadores */
 }
 
 .topo_menu li {
-    display: inline-block;
-    margin-left: 20px;
+  display: inline-block; /* Coloca itens lado a lado */
+  margin-left: 20px;
 }
 
 .topo_menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 19px;
+  text-decoration: none;
+  display:flex;
+  align-items: center;  /* Alinha ícone e texto */
+  gap: 6px;             /* Espaço entre ícone e texto */
+  text-decoration: none;
+  color: white;         /* cor do texto */
+  font-size: 20px;      /* opcional */
+}
+a svg {
+  flex-shrink: 0;       /* Garante que o ícone não deforme */
 }
 
-.topo_menu button{
-    background-color: red;
-    border-radius: 5px;
-    padding: 5px;
+/* Botão no menu */
+.topo_menu button {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
 }
 
-.topo_menu :hover{
-    background-color: #ff6b6b;
-    color: #000;
+/* Efeito hover no menu */
+.topo_menu :hover {
+  background-color: #ff6b6b;
+  color: #000;
 }
 
 /* ===================== BANNER PRINCIPAL ===================== */

@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* -------------------- RESET E CONFIGURAÇÕES GERAIS -------------------- */
+* {
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamentos padrão */
+  box-sizing: border-box; /* Inclui padding e borda no tamanho total do elemento */
+  font-family: 'Poppins', sans-serif; /* Fonte padrão */
+}
+
+body {
+  background-color: #000; /* Fundo preto */
+  color: white; /* Texto branco */
+}
+
+/* -------------------- CABEÇALHO -------------------- */
+header {
+  background-color: #000080; /* Azul marinho */
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+  padding: 20px 40px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre logo e menu */
+  align-items: center; /* Alinha verticalmente */
+  position: fixed; /* Fixa no topo */
+  z-index: 1000; /* Fica acima dos outros elementos */
+  width: 100%; /* Ocupa toda a largura */
+  height: 10vh; /* Altura proporcional à tela */
+  top: 0; /* Gruda no topo */
+}
+
+/* Logo do site */
+.logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Lista do menu */
+.topo_menu {
+  list-style: none; /* Remove marcadores */
+}
+
+.topo_menu li {
+  display: inline-block; /* Coloca itens lado a lado */
+  margin-left: 20px;
+}
+
+.topo_menu a {
+  text-decoration: none;
+  display:flex;
+  align-items: center;  /* Alinha ícone e texto */
+  gap: 6px;             /* Espaço entre ícone e texto */
+  color: white;         /* cor do texto */
+  font-size: 20px;      /* opcional */
+}
+a svg {
+  flex-shrink: 0;       /* Garante que o ícone não deforme */
+}
+
+/* Botão no menu */
+.topo_menu button {
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+/* Efeito hover no menu */
+.topo_menu :hover {
+  background-color: #ff6b6b;
+  color: #000;
+}
+/* -------------------- CONTEÚDO PRINCIPAL -------------------- */
+.banner-container{
+   background-image: url('../imagens/bg-hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#cadastro{ 
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(16, 25, 53, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  width: 500px;
+  height: 650px;
+  box-shadow: 0px 0px 10px rgb(153, 6, 6);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  margin: 60px auto;
+}
+#cadastro h1{
+  text-align: center;
+  font-size: 35px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
+  margin-bottom: 5vh;
+  color: #ff0000;
+
+}
+#cadastro label[for="nome"] {
+  width: 100%;
+  padding: 2px;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  color: #f8fafc;
+}
+
+#cadastro label[for="email"] {
+width: 100%;
+  padding: 2px;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  color: #f8fafc;
+  
+}
+#cadastro input{
+  width: 100%;
+  padding: 10px 0;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+#cadastro label[for="senha"] {
+ width: 100%;
+  padding: 2px;
+  font-size: 20px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  color: #f8fafc;
+}
+.cadastrar {
+  background-color: rgba(255, 12, 12, 0.827);
+  color: white;
+  border: 3px solid black;
+  border-radius: 25px;
+  width: 50%;
+  padding: 10px;
+  float: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.cadastrar:hover {
+  background-color: #ff6b6b;
+}
+#cadastro p {
+  margin-top: 20px;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  color: #f8fafc;
+}
+#cadastro p a {
+  color: red;
+  text-decoration: none;
+}
+#cadastro p a:hover {
+  text-decoration: underline;
+  background-color: #ff6b6b;
+}
+
+/* Rodapé */
+.rodape{
+    background-color: rgb(2, 2, 103);
+    margin-top: 50%;
+    padding: 10px;
+    text-align: center;
+    padding: 10px 0;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}

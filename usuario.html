@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+  <!-- Configuração de codificação de caracteres -->
+  <meta charset="UTF-8" />
+  <!-- Ajuste para layout responsivo em dispositivos móveis -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Título que aparece na aba do navegador -->
+  <title>🎦CineMundo</title>
+  
+  <!-- Importa o arquivo CSS principal -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Fonte Poppins do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Biblioteca jQuery (necessária para o Slick Carousel) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <!-- Estilos do Slick Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  
+  <!-- Script do Slick Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</head>
+
+<body>
+
+  <!-- =================== CABEÇALHO =================== -->
+  <header>
+    <!-- Logo do site -->
+    <div class="logo">
+      <a href="site-CineMundo.html">
+        🎦CineMundo
+      </a>
+    </div>
+
+    <!-- Menu de navegação -->
+    <nav>
+      <ul class="topo_menu">
+       <h1 id="bemVindo"></h1>
+      <p>Tipo de login: <span id="tipoLogin"></span></p>
+      <button onclick="sair()">Sair</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =================== BANNER PRINCIPAL =================== -->
+  <section id="banner">
+    <div class="banner-slider">
+      <!-- Cada div representa um slide do carrossel -->
+      <div><img src="imagens/capitão_america.jpg" alt="Capitão América"></div>
+      <div><img src="imagens/thunder.jpg" alt="Thunderbolts"></div>
+      <div><img src="imagens/ana-de-armas-bailarina.webp" alt="Bailarina"></div>
+      <div><img src="imagens/jur.png" alt="Jurassic World"></div>
+      <div><img src="imagens/Karate-Kid-Legends.jpg" alt="Karate Kid"></div>
+      <div><img src="imagens/looneyt.jpg" alt="Looney Tunes"></div>
+      <div><img src="imagens/superman1.jpg" alt="Superman"></div>
+      <div><img src="imagens/Minecraft-Filme-1.webp" alt="Minecraft"></div>
+      <div><img src="imagens/demonslayer.jpg" alt="Demon Slayer"></div>
+      <div><img src="imagens/quarteto_fantastico_primeiros_passos.jpg" alt="Quarteto Fantástico"></div>
+    </div>
+  </section>
+
+  <!-- =================== FILMES EM CARTAZ =================== -->
+  <section class="cartaz">
+    <!-- Título da seção -->
+    <h2>🎬 Filmes em Cartaz</h2>
+
+    <!-- Container geral do carrossel de filmes -->
+    <div class="carrossel-container">
+      <!-- Botão para rolar para a esquerda -->
+      <button class="btn prev"><</button>
+
+      <!-- Lista horizontal de filmes -->
+      <div class="carrossel" id="carrossel">
+        
+        <!-- Filme 1 -->
+        <div class="filme">
+          <a href="filme1.html"><img src="imagens/filme1.webp" alt=""></a>
+          <h3>Capitão América: Admirável Mundo Novo</h3>
+          <p>A14 - AÇÃO - 1h59</p>
+        </div>
+
+        <!-- Filme 2 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/Thunderbolts_5.jpg" alt=""></a>
+          <h3>Thunderbolts</h3>
+          <p>A14 - AÇÃO, AVENTURA - 2h06</p>
+        </div>
+
+        <!-- Filme 3 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/karatekid_lendas.jpeg" alt=""></a>
+          <h3>Karate Kid Lendas</h3>
+          <p>A12 - AÇÃO, DRAMA - 1h30</p>
+        </div>
+
+        <!-- Filme 4 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/Minecraft.webp" alt=""></a>
+          <h3>Um Filme Minecraft</h3>
+          <p>A10 - AÇÃO, ANIMAÇÃO - 2h</p>
+        </div>
+
+        <!-- Filme 5 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/superman.jpg" alt=""></a>
+          <h3>Superman: Legacy</h3>
+          <p>A12 - AÇÃO, FANTASIA - 2h</p>
+        </div>
+
+        <!-- Filme 6 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/looney.webp" alt=""></a>
+          <h3>Looney Tunes: O Dia Que a Terra Explodiu</h3>
+          <p>A10 - ANIMAÇÃO - 1h30</p>
+        </div>
+
+        <!-- Filme 7 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/jurassic.webp"></a>
+          <h3>Jurassic World: Recomeço</h3>
+          <p>A12 - AÇÃO, AVENTURA - 2h</p>
+        </div>
+
+        <!-- Filme 8 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/kimetsunoyaiba.webp"></a>
+          <h3>Demon Slayer: Kimetsu no Yaiba</h3>
+          <p>A18 - ANIMAÇÃO - 2h10</p>
+        </div>
+         <!-- Filme 9 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/bailarina.webp"></a>
+          <h3>Bailarina – Do Universo de John Wick</h3>
+          <p>A16 - AÇÃO - 2h06</p>
+        </div>
+         <!-- Filme 10 -->
+        <div class="filme">
+          <a href="#"><img src="imagens/4fantastic.webp"></a>
+          <h3>Quarteto Fantástico: Primeiros Passos</h3>
+          <p>A12 - AVENTURA - 2h06</p>
+        </div>
+         </div>
+
+      <!-- Botão para rolar para a direita -->
+      <button class="btn next">></button>
+    </div>
+  </section>
+
+  <!-- Script do carrossel de imagens (Slick) -->
+  <script src="js/usuario.js"></script>
+  <!-- =================== RODAPÉ =================== -->
+  <footer class="rodape">
+    <p><b>© 2025 - CineMundo - Brasil</b><br><b>ADRITON</b></p>
+  </footer>
+
+</body>
+</html>
+

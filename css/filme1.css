@@ -62,18 +62,53 @@ a svg {
 }
 
 /* Botão no menu */
-.topo_menu button {
+.topo_menu{
   background-color: red;
   border-radius: 5px;
   padding: 5px;
+  cursor: pointer;
+  width: auto;
 }
 
-/* Efeito hover no menu */
-.topo_menu :hover {
-  background-color: #ff6b6b;
-  color: #000;
+.menu-login{
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+.login-btn{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 10px;
+}
+/* Dropdown Escondido */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #000080;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    min-width: 150px;
 }
 
+.dropdown li {
+    padding: 8px 12px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* MOSTRA quando passar o mouse */
+.menu-login:hover .dropdown {
+    display: block;
+}
 /* ===================== BANNER PRINCIPAL ===================== */
 .banner-container{
     margin-top: 3%;

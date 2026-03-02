@@ -65,20 +65,85 @@
 
         <!-- Botões de ação (trailer e sessões) -->
         <section class="buttons">
-            <button id="btnTrailer">Trailer</button>
+            <button onclick="mostrarTrailer()">Trailer</button>
             <button id="btnSessoes">Sessões</button>
         </section>
 
-        <!-- ======= MODAL DO TRAILER ======= -->
-        <div id="trailerModal" class="modal">
-            <div class="modal-content">
-                <!-- Botão de fechar modal -->
-                <span class="close">&times;</span>
-                <!-- Vídeo do trailer -->
-                <video id="trailerVideo" width="100%" height="400" controls>
-                    <source src="videos/capitao_america_admirável_mundo_novo.mp4" type="video/mp4">
-                </video>
+        <!-- ======= TRAILER ======= -->
+        <div id="areaTrailer" class="area-trailer">
+            <iframe
+            width="100%"
+            height="400"
+            src="videos/capitao_america_admirável_mundo_novo.mp4"
+            title="Trailer"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="sessoes-container">
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag">DUBLADO</span>
+                    <span class="sala">Sala 1</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:00</button>
+                    <button class="hora">16:30</button>
+                    <button class="hora">19:00</button>
+                    <button class="hora">21:30</button>
+                    <button class="hora">00:00</button>
+                </div>
             </div>
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                     <span class="tag_destaque"> 3D</span>
+                    <span class="tag">DUBLADO</span>
+                    <span class="sala">Sala 10</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">13:00</button>
+                    <button class="hora">15:30</button>
+                    <button class="hora">18:00</button>
+                    <button class="hora">20:30</button>
+                    <button class="hora">23:00</button>
+                </div>
+            </div>
+
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag">LEGENDADO</span>
+                    <span class="sala">Sala 13</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:45</button>
+                    <button class="hora">17:30</button>
+                    <button class="hora">19:20</button>
+                    <button class="hora">21:50</button>
+                    <button class="hora">23:30</button>
+                </div>
+            </div>
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag_destaque"> 3D</span>
+                    <span class="tag">LEGENDADO</span>
+                    <span class="sala">Sala XD</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:30</button>
+                    <button class="hora">17:00</button>
+                    <button class="hora">19:30</button>
+                    <button class="hora">22:00</button>
+                    <button class="hora">00:30</button>
+                </div>
+            </div>
+            
+            
+
         </div>
 
         <!-- Script JavaScript com funções da página -->

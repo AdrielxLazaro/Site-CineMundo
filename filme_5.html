@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎦CineMundo_superman</title>
+    <!-- Importa o CSS específico desta página -->
+    <link rel="stylesheet" href="css/filme_5.css">
+</head>
+<body>
+    
+    <!-- ======= CABEÇALHO / BANNER PRINCIPAL ======= -->
+    <header>
+    <!-- Logo do site -->
+    <div class="logo">
+      <a href="site-CineMundo.html">
+        🎦CineMundo
+      </a>
+    </div>
+
+    <!-- Menu de navegação -->
+    <nav>
+      <ul class="topo_menu">
+        <li class="menu-login">
+          <span class="login-btn">
+            <!-- Link para página de login -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="darkblue" 
+                   class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+              Login
+              </span>
+              <ul class="dropdown">
+                <li><a href="login.html">Entrar</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+              </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+    <main>
+        <!-- Container do banner -->
+        <div class="banner-container">
+            <!-- Imagem de fundo do banner -->
+            <div class="banner-background"></div>
+            
+            <!-- Conteúdo sobre o filme -->
+            <section class="banner-content">
+                <!-- Imagem do cartaz -->
+                <img src="imagens/superman.jpg" alt="Cartaz do filme Superman: Legacy" class="cartaz">
+                <div class="banner-info">
+                    <!-- Título do filme -->
+                    <h2>Superman: Legacy</h2>
+                    <!-- Detalhes: classificação, duração e gênero -->
+                    <p class="detalhes"> <b>12</b> | &nbsp; 2h &nbsp;| AÇÃO, FANTASIA </p>
+                    <!-- Sinopse do filme -->
+                    <p class="descricao">
+                        Um herói movido pela crença e pela esperança na bondade da humanidade. Em Superman, acompanhamos a jornada do super-herói em tentar conciliar suas duas personas: sua herança extraterrestre como kryptoniano e sua vida humana, criado como Clark Kent (David Corenswet) na cidade de Smallville no Kansas. Dirigido por James Gunn, o novo filme irá reunir personagens, heróis e vilões clássicos da história de Superman, como Lex Luthor (Nicholas Hoult), Lois Lane (Rachel Brosnahan), Lanterna Verde (Nathan Fillion), Mulher-Gavião (Isabela Merced), entre outros. O chamado de Superman será colocado à prova através de uma série de novas aventuras épicas e diante de uma sociedade que enxerga seus valores de justiça e verdade como antiquados.    
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Botões de ação (trailer e sessões) -->
+        <section class="buttons">
+            <button onclick="mostrarTrailer()">Trailer</button>
+            <button id="btnSessoes">Sessões</button>
+        </section>
+
+        <!-- ======= TRAILER ======= -->
+        <div id="areaTrailer" class="area-trailer">
+            <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/14qzQDMcTqM"
+            title="Trailer do filme Superman: Legacy"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+            <!--=================================== Blocos de sessões ======================-->
+
+        <div class="sessoes-container">
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag">DUBLADO</span>
+                    <span class="sala">Sala 1</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:00</button>
+                    <button class="hora">16:30</button>
+                    <button class="hora">19:00</button>
+                    <button class="hora">21:30</button>
+                    <button class="hora">00:00</button>
+                </div>
+            </div>
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                     <span class="tag_destaque"> 3D</span>
+                    <span class="tag">DUBLADO</span>
+                    <span class="sala">Sala 10</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">13:00</button>
+                    <button class="hora">15:30</button>
+                    <button class="hora">18:00</button>
+                    <button class="hora">20:30</button>
+                    <button class="hora">23:00</button>
+                </div>
+            </div>
+
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag">LEGENDADO</span>
+                    <span class="sala">Sala 13</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:45</button>
+                    <button class="hora">17:30</button>
+                    <button class="hora">19:20</button>
+                    <button class="hora">21:50</button>
+                    <button class="hora">23:30</button>
+                </div>
+            </div>
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag_destaque"> 3D</span>
+                    <span class="tag">LEGENDADO</span>
+                    <span class="sala">Sala XD</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:30</button>
+                    <button class="hora">17:00</button>
+                    <button class="hora">19:30</button>
+                    <button class="hora">22:00</button>
+                    <button class="hora">00:30</button>
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+        <!-- Script JavaScript com funções da página -->
+        <script src="./js/filme.js"></script>
+    </main>
+
+    <!-- ======= RODAPÉ ======= -->
+    <footer id="rodape">
+        <p>© 2025 - CineMundo - Brasil</p>
+        <p>ADRITON</p>
+    </footer>
+    
+</body>
+</html>

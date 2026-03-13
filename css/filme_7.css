@@ -1,0 +1,267 @@
+/* ===================== CONFIGURAÇÕES GERAIS ===================== */
+@charset "utf-8";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #222;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* ===================== CABEÇALHO ===================== */
+header {
+  background-color: #000080; /* Azul marinho */
+  color: white;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+  padding: 20px 40px; /* Espaçamento interno */
+  display: flex; /* Layout flexível */
+  justify-content: space-between; /* Espaço entre logo e menu */
+  align-items: center; /* Alinha verticalmente */
+  position: fixed; /* Fixa no topo */
+  z-index: 1000; /* Fica acima dos outros elementos */
+  width: 100%; /* Ocupa toda a largura */
+  height: 10vh; /* Altura proporcional à tela */
+  top: 0; /* Gruda no topo */
+}
+
+/* Logo do site */
+.logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Lista do menu */
+.topo_menu {
+  list-style: none; /* Remove marcadores */
+}
+
+.topo_menu li {
+  display: inline-block; /* Coloca itens lado a lado */
+  margin-left: 20px;
+}
+
+.topo_menu a {
+  text-decoration: none;
+  display:flex;
+  align-items: center;  /* Alinha ícone e texto */
+  gap: 6px;             /* Espaço entre ícone e texto */
+  text-decoration: none;
+  color: white;         /* cor do texto */
+  font-size: 20px;      /* opcional */
+}
+a svg {
+  flex-shrink: 0;       /* Garante que o ícone não deforme */
+}
+
+/* Botão no menu */
+.topo_menu{
+  background-color: red;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+.menu-login{
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+.login-btn{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 10px;
+}
+/* Dropdown Escondido */
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #000080;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    min-width: 150px;
+}
+
+.dropdown li {
+    padding: 8px 12px;
+}
+
+.dropdown li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* MOSTRA quando passar o mouse */
+.menu-login:hover .dropdown {
+    display: block;
+}
+/* ===================== BANNER PRINCIPAL ===================== */
+.banner-container{
+    margin-top: 3%;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-background{
+    background-image: url("../imagens/jur.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(60%) blur(2px);
+}
+
+/* ===================== CONTEÚDO DO BANNER ===================== */
+.banner-content{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 60px;
+    color: white;
+}
+
+.banner-content img{
+    height: 80%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgb(0,0,0,0.6);
+    margin-right: 40px;
+}
+
+.banner-info{
+    max-width: 800px;
+}
+
+.banner-info h2{
+    font-size: 36px;
+    color: #cbd4ff;
+    text-shadow: 2px 2px 4px blue;  
+    margin:0 0 10px;  
+}
+
+b{
+    background-color: rgba(225, 206, 0, 1);
+    border-radius: 10px;
+    padding: 3px;
+    font-size: 18px;
+}
+
+.detalhes {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fcfcfb;
+    text-shadow: 3px 3px 10px blue;
+}
+
+.descricao{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #f0f0f0;
+    text-shadow: 3px 3px 3px blue;
+}
+
+/* ===================== BOTÕES TRAILER E SESSÕES ===================== */
+.buttons button{
+    background-color: #a20210;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 25px;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.buttons button:hover{
+    background-color: #ff6b6b;
+}
+
+/* ===================== MODAL DE TRAILER ===================== */
+.area-trailer {
+    display: none; /* Começa escondido */
+    margin-top: 30px;
+    text-align: center;
+}
+.area-trailer iframe{
+    max-width: 100%;
+    border-radius: 12px;
+}
+.sessoes-container{
+    margin-top: 40px;
+    padding: 20px;
+}
+.sessoes-bloco{
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+.sessoes-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.tag{
+    background-color: #374151;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+.tag_destaque{
+    background-color: #2563ed;
+}
+.sala{
+    margin-left: auto;
+    color: #9ca3af;
+    font-size: 14px;
+}
+.horarios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.hora{
+    background: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.hora:hover{
+    background-color: #3b82f6;
+    color: white;
+}
+/* ===================== RODAPÉ ===================== */
+#rodape{
+    background-color: rgb(2, 2, 103);
+    top: auto;
+    padding: 10px;
+    margin-top: 20%;
+}

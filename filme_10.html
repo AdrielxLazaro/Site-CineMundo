@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎦CineMundo_Fourfantastic</title>
+    <!-- Importa o CSS específico desta página -->
+    <link rel="stylesheet" href="css/filme_10.css">
+</head>
+<body>
+    
+    <!-- ======= CABEÇALHO / BANNER PRINCIPAL ======= -->
+    <header>
+    <!-- Logo do site -->
+    <div class="logo">
+      <a href="site-CineMundo.html">
+        🎦CineMundo
+      </a>
+    </div>
+
+    <!-- Menu de navegação -->
+    <nav>
+      <ul class="topo_menu">
+        <li class="menu-login">
+          <span class="login-btn">
+            <!-- Link para página de login -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="darkblue" 
+                   class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg>
+              Login
+              </span>
+              <ul class="dropdown">
+                <li><a href="login.html">Entrar</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+              </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+    <!-- ======= CONTEÚDO PRINCIPAL ======= -->
+    <main>
+        <!-- Container do banner -->
+        <div class="banner-container">
+            <!-- Imagem de fundo do banner -->
+            <div class="banner-background"></div>
+            
+            <!-- Conteúdo sobre o filme -->
+            <section class="banner-content">
+                <!-- Imagem do cartaz -->
+                <img src="imagens/4fantastic.webp" alt="Cartaz do filme Quarteto Fantástico: Primeiros Passos" class="cartaz">
+                <div class="banner-info">
+                    <!-- Título do filme -->
+                    <h2>Quarteto Fantástico: Primeiros Passos</h2>
+                    <!-- Detalhes: classificação, duração e gênero -->
+                    <p class="detalhes"> <b>12</b> | &nbsp; 2h06 &nbsp;| AVENTURA </p>
+                    <!-- Sinopse do filme -->
+                    <p class="descricao">
+                   Um grupo de astronautas passa por uma tempestade cósmica durante seu voo experimental. Ao retornar à Terra, os tripulantes descobrem que possuem novas e bizarras habilidades. Reed Richards pode esticar seu corpo. Sua noiva, Susan Storm, ganha a habilidade de se tornar invisível. Seu irmão mais novo, Johnny Storm, adquiriu o poder de controlar o fogo e voar. Já o piloto Ben Grimm foi transformado em um monstro rochoso. Ao tentar compreender seus poderes, eles têm que lidar com novas ameaças.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Botões de ação (trailer e sessões) -->
+        <section class="buttons">
+            <button onclick="mostrarTrailer()">Trailer</button>
+            <button id="btnSessoes">Sessões</button>
+        </section>
+
+        <!-- ======= TRAILER ======= -->
+        <div id="areaTrailer" class="area-trailer">
+            <iframe
+            width="100%"
+            height="400"
+            src="https://www.youtube.com/embed/CcSIvhDlYWw"
+            title="Trailer do filme Quarteto Fantástico: Primeiros Passos"
+            frameborder="0"
+            allowfullscreen>
+            </iframe>
+        </div>
+
+            <!--=================================== Blocos de sessões ======================-->
+
+        <div class="sessoes-container">
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag">DUBLADO</span>
+                    <span class="sala">Sala 1</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:00</button>
+                    <button class="hora">16:30</button>
+                    <button class="hora">19:00</button>
+                    <button class="hora">21:30</button>
+                    <button class="hora">00:00</button>
+                </div>
+            </div>
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                     <span class="tag_destaque"> 3D</span>
+                    <span class="tag">DUBLADO</span>
+                    <span class="sala">Sala 10</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">13:00</button>
+                    <button class="hora">15:30</button>
+                    <button class="hora">18:00</button>
+                    <button class="hora">20:30</button>
+                    <button class="hora">23:00</button>
+                </div>
+            </div>
+
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag">LEGENDADO</span>
+                    <span class="sala">Sala 13</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:45</button>
+                    <button class="hora">17:30</button>
+                    <button class="hora">19:20</button>
+                    <button class="hora">21:50</button>
+                    <button class="hora">23:30</button>
+                </div>
+            </div>
+            <div class="sessoes-bloco">
+                <div class="sessoes-info">
+                    <span class="tag_destaque"> 3D</span>
+                    <span class="tag">LEGENDADO</span>
+                    <span class="sala">Sala XD</span>
+                </div>
+
+                <div class="horarios">
+                    <button class="hora">14:30</button>
+                    <button class="hora">17:00</button>
+                    <button class="hora">19:30</button>
+                    <button class="hora">22:00</button>
+                    <button class="hora">00:30</button>
+                </div>
+            </div>
+            
+            
+
+        </div>
+
+        <!-- Script JavaScript com funções da página -->
+        <script src="./js/filme.js"></script>
+    </main>
+
+    <!-- ======= RODAPÉ ======= -->
+    <footer id="rodape">
+        <p>© 2025 - CineMundo - Brasil</p>
+        <p>ADRITON</p>
+    </footer>
+    
+</body>
+</html>
